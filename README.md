@@ -1,4 +1,4 @@
-# EqualEd
+# CyberNinjas Education
 
 **CyberNinjas** is an AI-powered inclusive learning platform designed to make digital education accessible for everyone, especially students with disabilities.
 
@@ -72,4 +72,5 @@ We welcome contributions! Feel free to open issues or submit pull requests to he
 
 ## License 📄
 MIT License - free to use, modify, and distribute.# education
+# education
 # education
