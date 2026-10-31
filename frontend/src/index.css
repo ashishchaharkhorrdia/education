@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #ffffff;
+    --text-primary: #1f2937;
+    --accent-color: #3b82f6;
+  }
+
+  .high-contrast {
+    --bg-primary: #000000;
+    --text-primary: #ffff00;
+    --accent-color: #ffff00;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition:
+      background-color 0.3s,
+      color 0.3s;
+  }
+}
