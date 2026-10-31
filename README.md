@@ -1,6 +1,6 @@
 # EqualEd
 
-**EqualEd** is an AI-powered inclusive learning platform designed to make digital education accessible for everyone, especially students with disabilities.
+**CyberNinjas** is an AI-powered inclusive learning platform designed to make digital education accessible for everyone, especially students with disabilities.
 
 The platform provides assistive tools such as voice commands, text-to-speech, speech-to-text, captions, and adaptive learning modes to help students learn more easily.
 
@@ -72,3 +72,4 @@ We welcome contributions! Feel free to open issues or submit pull requests to he
 
 ## License 📄
 MIT License - free to use, modify, and distribute.# education
+# education
