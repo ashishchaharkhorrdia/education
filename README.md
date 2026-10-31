@@ -40,8 +40,8 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your computer.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/equaled-ai.git
-    cd equaled-ai
+    git clone https://github.com/ashishchaharkhorrdia/education.git
+    cd education
     ```
 
 2.  **Setup the Backend:**
