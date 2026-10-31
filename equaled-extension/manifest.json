@@ -1,0 +1,85 @@
+{
+  "manifest_version": 3,
+  "name": "EqualEd Accessibility",
+  "short_name": "EqualEd",
+  "version": "1.0.0",
+  "description": "Production-grade accessibility toolkit for any educational website. Includes voice control, text-to-speech, reading aids, visual filters, focus tools, and more.",
+  "author": "EqualEd Team",
+
+  "permissions": [
+    "storage",
+    "tts",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "contextMenus",
+    "notifications"
+  ],
+  "host_permissions": ["<all_urls>"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "EqualEd Accessibility",
+    "default_icon": {
+      "16":  "icons/icon16.png",
+      "32":  "icons/icon32.png",
+      "48":  "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "icons/*.png",
+        "content/content.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "icons": {
+    "16":  "icons/icon16.png",
+    "32":  "icons/icon32.png",
+    "48":  "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+
+  "commands": {
+    "toggle-panel": {
+      "suggested_key": {
+        "default": "Alt+Shift+A",
+        "mac": "Alt+Shift+A"
+      },
+      "description": "Toggle EqualEd Accessibility Panel"
+    },
+    "toggle-tts": {
+      "suggested_key": {
+        "default": "Alt+Shift+S",
+        "mac": "Alt+Shift+S"
+      },
+      "description": "Toggle Text-to-Speech"
+    },
+    "toggle-high-contrast": {
+      "suggested_key": {
+        "default": "Alt+Shift+C",
+        "mac": "Alt+Shift+C"
+      },
+      "description": "Toggle High Contrast Mode"
+    }
+  }
+}

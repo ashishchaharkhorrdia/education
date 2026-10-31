@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome to EqualEd Accessibility</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --primary:#6366f1; --primary-dark:#4f46e5; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { font-family:'Inter',sans-serif; background:#0f1117; color:#e2e8f0; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:40px 20px; }
+    .card { max-width:660px; width:100%; background:#1a1d27; border:1px solid rgba(99,102,241,0.2); border-radius:24px; padding:48px; }
+    .logo { width:64px; height:64px; background:linear-gradient(135deg,#4f46e5,#7c3aed); border-radius:16px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; font-size:32px; }
+    h1 { font-size:32px; font-weight:800; background:linear-gradient(135deg,#818cf8,#c4b5fd); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:8px; }
+    .subtitle { color:#64748b; font-size:15px; margin-bottom:40px; }
+    .features { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:40px; }
+    .feature { padding:16px; background:#222535; border:1px solid rgba(255,255,255,0.06); border-radius:12px; }
+    .feature-icon { font-size:24px; margin-bottom:8px; }
+    .feature h3 { font-size:14px; font-weight:600; color:#e2e8f0; margin-bottom:4px; }
+    .feature p { font-size:12px; color:#64748b; line-height:1.5; }
+    .shortcuts { background:#222535; border-radius:12px; padding:20px; margin-bottom:32px; }
+    .shortcuts h3 { font-size:13px; font-weight:600; color:#94a3b8; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:12px; }
+    .shortcut-row { display:flex; justify-content:space-between; align-items:center; padding:6px 0; border-bottom:1px solid rgba(255,255,255,0.05); }
+    .shortcut-row:last-child { border-bottom:none; }
+    kbd { background:#1a1d27; border:1px solid rgba(255,255,255,0.1); border-radius:4px; padding:2px 8px; font-family:monospace; font-size:12px; color:#818cf8; }
+    .shortcut-desc { font-size:12px; color:#64748b; }
+    .cta { text-align:center; color:#64748b; font-size:13px; }
+    .badge { display:inline-block; background:rgba(99,102,241,0.15); border:1px solid rgba(99,102,241,0.3); color:#818cf8; border-radius:99px; padding:4px 14px; font-size:12px; font-weight:600; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">♿</div>
+    <h1>Welcome to EqualEd</h1>
+    <p class="subtitle">Production-grade accessibility toolkit for any educational website. Click the extension icon to get started.</p>
+
+    <div class="features">
+      <div class="feature"><div class="feature-icon">🔊</div><h3>Text-to-Speech</h3><p>Read any page aloud with word-by-word highlighting and adjustable speed, pitch & voice.</p></div>
+      <div class="feature"><div class="feature-icon">🎙️</div><h3>Voice Control</h3><p>Navigate & interact using your voice. Say "scroll down", "go back", "read page" and more.</p></div>
+      <div class="feature"><div class="feature-icon">🎨</div><h3>Visual Filters</h3><p>High contrast themes, dark mode, color vision filters (deuteranopia, protanopia, tritanopia).</p></div>
+      <div class="feature"><div class="feature-icon">📖</div><h3>Dyslexia Support</h3><p>OpenDyslexic font, letter/word/line spacing controls, reading guide & mask.</p></div>
+      <div class="feature"><div class="feature-icon">🎯</div><h3>Focus Mode</h3><p>Spotlight cursor, reading mask, and animation pause for reduced distraction.</p></div>
+      <div class="feature"><div class="feature-icon">👁️</div><h3>Eye & Hand Tracking</h3><p>Gaze-based scrolling and gesture-based navigation via webcam — no mouse needed.</p></div>
+    </div>
+
+    <div class="shortcuts">
+      <h3>Keyboard Shortcuts</h3>
+      <div class="shortcut-row"><kbd>Alt+Shift+A</kbd><span class="shortcut-desc">Toggle Accessibility Panel</span></div>
+      <div class="shortcut-row"><kbd>Alt+Shift+S</kbd><span class="shortcut-desc">Toggle Text-to-Speech</span></div>
+      <div class="shortcut-row"><kbd>Alt+Shift+C</kbd><span class="shortcut-desc">Toggle High Contrast</span></div>
+      <div class="shortcut-row"><span class="shortcut-desc">Right-click any text</span><span class="shortcut-desc">Read selected text</span></div>
+    </div>
+
+    <div class="cta">
+      <span class="badge">📌 Pin the extension for easy access</span>
+      <p style="margin-top:12px">Click the <strong style="color:#818cf8">EqualEd icon</strong> in your browser toolbar to open the panel.</p>
+    </div>
+  </div>
+</body>
+</html>
