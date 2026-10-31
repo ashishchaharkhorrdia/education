@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="frontend/src/components/logo.png" alt="CyberNinjas Logo" width="120" />
+  <img src="frontend/src/components/logo.png" alt="CyberNinjas Logo" width="140" />
   <img src="frontend/src/components/Cyber%20ninjas.svg" alt="CyberNinjas Text Logo" width="320" />
 </div>
 
